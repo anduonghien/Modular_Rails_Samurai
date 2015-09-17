@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title
+      | Core
+    = stylesheet_link_tag    "samurai/application", media: "all"
+    = javascript_include_tag "samurai/application"
+    = csrf_meta_tags
+  body
+    = yield
